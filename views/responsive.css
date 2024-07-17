@@ -1,0 +1,59 @@
+@media screen and (max-width:600px){
+.main2{
+    display: block;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+.JOBS{
+    display: block;
+    flex-basis: 100%;
+    margin: auto;
+}
+.profile1{
+    margin:5px 20px;
+}
+.main-container{
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+.people .content{
+    flex: 0 0 100%;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width:992px){
+ .main2 > div{
+    flex: 0 0 50%;
+ }
+ .main2{
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+ }   
+}
+
+@media screen and (max-width:992px) {
+.people .image, .people .content{
+    flex: 0 0 100%;
+}  
+.people{
+    flex-wrap: wrap;
+    margin: auto;
+    width: 70%;
+} 
+.people .content{
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.image img{
+    position: static;
+    width: 100%;
+    height: 100%;
+}
+.people .image {
+    order: -1;
+}
+    
+}
+

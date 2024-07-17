@@ -1,0 +1,376 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* NAV BAR START */
+.navbar{
+    justify-content: space-between;
+    height: 80px;
+    background-color: #FDF8EE;
+    padding: 5px;
+    color: antiquewhite;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 10;
+}
+
+.left{
+   font-size: 55px;
+}
+
+.right{
+   font-size: 20px;    
+}
+
+li{
+   list-style-type: none;
+   margin-right: 20px;
+   transition: ease-in 0.75s;
+}
+
+a{
+   text-decoration: none;
+   color: black;
+}
+
+
+ul{
+   align-content: center;
+   margin-top: 20px;
+}
+.navbuttons{
+  justify-content: center;
+}
+
+#login{
+   width: 150px;
+   font-size: 18px;
+   font-weight:bold;
+   color:black;
+   background-color: #FDF8EE;
+   padding: 0.5rem;
+   border:1.7px solid black;
+   border-radius: 25px;
+   margin: -10px ;
+}
+#login:hover{
+   color:#FDF8EE;
+   background-color: #4D2C5E;
+}
+li:hover{
+   text-decoration: underline black;
+}
+/* NAV BAR ENDS */
+
+
+/* IMAGE SECTION START */
+.home{
+    height: 800px;
+    width: 100%;
+    background-image: url("IMAGES/hero.png");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    size: 100%;
+}
+.home *{
+    z-index: 4;
+}
+.text-block{
+    position: absolute;
+    top: 270px;
+    left: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.text-block h1{
+    font-size: 50px;
+    color: #FF7426;
+    margin: 10px;
+}
+.text-block p{
+    font-size: 20px;
+    color:#8A8A8A;
+    margin: 20px;
+}
+.meetsearch{
+        background-color: white;
+        height: 60px;
+        width: 440px;
+}
+.meetsearch input{
+    width: 285px;
+    border:none;
+}
+
+.meetsearch img{
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+}
+/* IMAGE SECTION ENDS */
+
+/* Section 2 start */
+
+.main1{
+    margin: 10px;
+    padding: 10px;  
+}
+.main1 h1{
+    text-align: center;
+}
+.main1 p{
+    text-align: center;
+    margin: 10px 0px;
+  }
+.main2 {
+    background-color: #4D2C5E;
+    margin: 70px;
+    text-align: center;
+    font-size: 30px;
+    color: antiquewhite; 
+    border: 3px solid black;
+    border-radius: 35px;
+}
+.main2 div > *{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+ /* Section 2 Ends */
+
+ /* Section 3 start */
+
+.main3 p{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 30px;
+ }
+
+ /* PEOPLE  START */
+.people{
+    margin: 36px 60px;
+}
+
+ .content, .image{
+    flex:1;
+ }
+
+.content{
+    padding: 50px 150px;
+}
+
+.content > p{
+    font-size: 22px;
+    margin: 1.5rem 0px;
+}
+
+img{
+    width: 100%;
+}
+
+.image img{
+    height: 80%;
+    width: 100%;
+    position: relative;
+    top: 10%;
+    right: 10%;
+}
+
+.row-reverse .image img{
+    left:30%;
+}
+/* PEOPLE  ENDS */
+
+ /* Section 3 Ends */
+
+ /* Section 4 Start */
+ .header h1{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 30px;
+ }
+ .image2{
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .image2 img{
+    width:24% ;
+    height: 200px;
+    margin: 5px;
+ }
+
+ .image2 img:hover{
+    opacity: 0.8;
+    cursor: crosshair;
+ }
+
+ /* Section 4 Ends */
+
+/* Section 5 Start */
+ .profile1 img{
+    border-radius: 50%;
+    width: 100%;
+    height: 250px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+ }
+ .JOBS{
+    justify-content: space-evenly;
+ }
+ .profile1 h3,em{
+    margin-top: 10px;
+    margin-left: 5px;
+ }
+/* Section 5 Ends */
+
+/* Section 6 Start */
+
+
+.col-2{
+    position: absolute;
+    z-index: 1; 
+    display: none;
+    padding: 50px;
+    top: 50px;
+    right: 10px;
+}
+.col-2 form{
+   justify-content: center;
+   align-items: start;
+}
+form input{
+    border: none;
+    padding: 5px;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+form .btn-success{
+    text-align: center;
+    width: 100%;
+}
+form input:focus{
+    outline: none;
+    border: 2px solid rgba(24, 177, 24, 0.797);
+    border-radius: 5px;
+}
+
+
+/* Section 7 Ends */
+/* S 8 */
+.col-3{
+    position: absolute;
+    z-index: 1; 
+    display: none;
+    padding: 50px;
+    top: 50px;
+    right: 10px;
+}
+.col-3 form{
+   justify-content: center;
+   align-items: start;
+}
+form input{
+    border: none;
+    padding: 5px;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+form .btn-success{
+    text-align: center;
+    width: 100%;
+}
+form input:focus{
+    outline: none;
+    border: 2px solid rgba(24, 177, 24, 0.797);
+    border-radius: 5px;
+}
+/* Section 6 Ends */
+
+/* FOOTER Start */
+.ReviewImg{
+    background-image: url(IMAGES/Group\ 360\ \(1\).png);
+    width: 100%;
+    height: 80vh;
+}
+
+.ReviewImg .REVIEW{
+    position: absolute;
+    top: 373vh;
+    right: 550px;
+    text-align: center;
+    border: 0px solid white;
+
+}
+footer{
+    display: flex;
+    align-items: center;
+    background-color:#FDF8EE;
+}
+footer div{
+    margin: 40px;
+}
+
+.left {
+    font-size: 20px;
+}
+
+.middle {
+    font-size: 20px;
+}
+
+.right {
+    font-size: 20px;
+}
+
+#copyright-text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: R;
+}
+/* FOOTER Ends */
+
+
+.col-4{
+    position: absolute;
+    z-index: 1; 
+    display: none;
+    padding: 50px;
+    top: 80px;
+    width: 300px;
+    right: 150px;
+    border:2px solid #8A8A8A;
+}
+.col-4 form{
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 10px;
+}
+form input{
+    border: none;
+    padding: 5px;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+form .btn-success{
+    text-align: center;
+    width: 70%;
+}
+form input:focus{
+    outline: none;
+    border: 2px solid rgba(24, 177, 24, 0.797);
+    border-radius: 5px;
+}
+
+/* FOOTER Ends */
