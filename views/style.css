@@ -46,6 +46,16 @@ ul{
   justify-content: center;
 }
 
+#username{
+    color: rgb(70, 80, 197);
+    font-size: 20px;
+    font-weight: bold;
+    border:1.7px solid orangered;
+    border-radius: 25px;
+    padding: 0.5rem;
+    margin: -10px ;
+    margin-right: 10px;
+}
 #login{
    width: 150px;
    font-size: 18px;
@@ -61,6 +71,21 @@ ul{
    color:#FDF8EE;
    background-color: #4D2C5E;
 }
+#search{
+    width: 150px;
+    font-size: 18px;
+    font-weight:bold;
+    color:black;
+    background-color: #FDF8EE;
+    padding: 0.5rem;
+    border:1.7px solid black;
+    border-radius: 25px;
+    margin: -10px ;
+ }
+ #search:hover{
+    color:#FDF8EE;
+    background-color: #4D2C5E;
+ }
 li:hover{
    text-decoration: underline black;
 }

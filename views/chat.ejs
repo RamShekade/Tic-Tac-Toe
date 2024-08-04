@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats</title>
+    <link type="stylesheet" href="utilities.css">
+</head>
+<body>
+    <div class="d-flex chat">
+        <div class="chatarea">
+            <% msgs.forEach(msg => { %>
+                <div id="msg" class="d-flex"><div id="name"><%=msg.name%></div><div id="text"><%= msg.msg %></div></div>
+            <% }) %>    
+    </div>
+    <div id="sendmsg">
+        <form action="/login/:<%= name %>/chat" method="post">
+            <input name="msg" type="text">
+            <button type="submit">send</button>
+        </form>
+    </div>
+
+    </div>
+        
+        
+    </div>
+</body>
+</html>

@@ -50,3 +50,29 @@ background-color: #f4f4f4;
 .bg-dark{
     background-color: #333;
 }
+
+/* chat section */
+.chat{
+    height: inherit;
+    width: inherit;
+    background-color: #fff;
+    position: relative;
+    top: 10%;
+    width: 100%;
+    z-index: 10;
+    
+}
+.chatarea{
+    height: 450px;
+    overflow-y:scroll; 
+}
+#msg{
+    width: fit-content;
+    margin-right: 30px;
+    
+}
+#sendmsg{
+
+    position: fixed;
+    bottom: 10%;
+}

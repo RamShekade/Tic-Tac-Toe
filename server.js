@@ -1,9 +1,7 @@
-const dotenv = require('dotenv');
-dotenv.config();
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const dbName = 'studysync';
-const mongoUrl = process.env.url; // Assuming your MongoDB connection URL is in the environment variable MONGO_URL
+const mongoUrl ="mongodb://localhost:27017";
 
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
@@ -28,14 +26,26 @@ mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
       required: true
     }
   });
+
+  const chatSchema = new mongoose.Schema({
+    name: {
+      type: String,
+      required: true
+    },
+    msg: {
+      type: String,
+      required: true
+    }
+  });
   signupSchema.methods.comparePassword = async function(candidatePassword) {
     return bcrypt.compare(candidatePassword, this.password);
 };
 
 
   
-
+const Chat = mongoose.model('Chat', chatSchema);
 const Signup = mongoose.model('Signup', signupSchema);
-module.exports = Signup;
+module.exports= {Signup,Chat};
+
 
 
